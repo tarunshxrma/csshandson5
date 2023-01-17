@@ -1,0 +1,194 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: rgb(240, 240, 60);
+}
+.container{
+    text-align: center;
+}
+.boxcontainer{
+    width: 600px;
+    height: 650px;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 300px;
+}
+.first,.second,.third,.fourth{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+}
+.box1,.box2,.box3{
+    animation: skewxanimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.box4,.box5,.box6{
+    animation: skewyanimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.box7,.box8,.box9{
+    animation: rotateanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.box10{
+    animation: heightanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.box11{
+    animation: widthanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.box12{
+    animation: rotateonceanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes skewxanimation{
+    0%{
+        transform: skewX(25deg);
+    }
+    50%{
+        transform: skewX(-25deg);
+    }
+    100%{
+        transform: skewX(25deg);
+    }
+}
+@keyframes skewyanimation{
+    0%{
+        transform: skewY(20deg);
+    }
+    50%{
+        transform: skewY(-20deg);
+    }
+    100%{
+        transform: skewY(20deg);
+    }
+}
+@keyframes rotateanimation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes heightanimation{
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1,0.5);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+@keyframes widthanimation{
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(0.5,1);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+@keyframes rotateonceanimation{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+}
+.box1,.box2,.box3,.box7,.box8,.box9,.box10{
+    background-color: rgb(94, 94, 202);
+}
+.box4,.box5,.box6{
+    background-color: rgb(156, 70, 236);
+}
+.box11{
+    background-color: brown;
+}
+.box12{
+    background-color: rgb(52, 168, 52);
+}
+.container a{
+    font-size: x-large;
+}
+.container2{
+    text-align: center;
+}
+.boxcontainer2{
+    width: 400px;
+    height: 825px;
+    margin-top: 15px;
+    margin-left: 580px;
+}
+.boxa{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(52, 168, 52);
+}
+.a,.b{
+    transition: 1s linear;
+}
+.a:hover{
+    width: 300px;
+}
+.b:hover{
+    height: 200px;
+    width: 200px;
+}
+.c{
+    transition: 1s linear;
+}
+.c:hover{
+    width: 300px;
+}
+.d{
+    transition: 1s ease;
+}
+.d:hover{
+    width: 300px;
+}
+.e{
+    transition: 1s ease-in;
+}
+.e:hover{
+    width: 300px;
+}
+.f{
+    transition: 1s ease-out;
+}
+.f:hover{
+    width: 300px;
+}
+.g{
+    transition: 1s ease-in-out;
+}
+.g:hover{
+    width: 300px;
+}
+.container2 a{
+    display: block;
+    font-size: x-large;
+}

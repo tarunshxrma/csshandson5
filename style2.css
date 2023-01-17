@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.movingcar{
+    width: 98%;
+    height: 100vh;
+    border: 10px solid;
+    border-color: white green white orange;
+    margin: auto;
+    text-align: center;
+    background-image: url(./sky.jpg);
+    z-index: -1;
+    overflow-x: hidden;
+    position: relative;
+}
+span{
+    font-size: 50px;
+}
+.orange{
+    background-color: orange;
+}
+.white{
+    background-color: white;
+}
+.green{
+    background-color: green;
+}
+.sun{
+    position: absolute;
+    right: 20px;
+    animation-name: sun;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.sun img{
+    height: 100px;
+    width: 100px;
+}
+@keyframes sun{
+    100%{
+        transform: translateX(-200px);
+    }
+}
+.road{
+    height: 200px;
+    width: 700%;
+    z-index: 1;
+    background-image: url(./road.jpg);
+    overflow-x: hidden;
+    position: absolute;
+    bottom: 0;
+    animation-name: road;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes road{
+    100%{
+        transform: translate(-2100px);
+    }
+}
+/* .road img{
+    height: 200px;
+} */
+.buildings{
+    height: 250px;
+    width: 700%;
+    background-image: url(./city.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 159px;
+    z-index: 1;
+    animation-name: buildings;
+    animation-duration:10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes buildings{
+    100%{
+        transform: translateX(-1300px);
+    }
+}
+.cartop{
+    z-index: 3;
+    position: absolute;
+    top: 320px;
+    left: 450px;
+    animation-name: cartop;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes cartop{
+    0%{
+        transform: translateY(3px);
+    }
+    50%{
+        transform: translateY(-3px);
+    }
+    100%{
+        transform: translateY(3px);
+    }
+}
+.cartop img{
+    height: 180px;
+}
+.wheels img{
+    height: 78px;
+    width: 78px;
+}
+.front{
+    z-index: 1;
+    position: absolute;
+    top: 416px;
+    left: 489px;
+    animation-name: front;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes front{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.back{
+    z-index: 1;
+    position: absolute;
+    top: 416px;
+    left: 753px;
+    animation-name: back;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes back{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.flag img{
+    height: 90px;
+    width: 90px;
+}
+.flag{
+    position: absolute;
+    top: 302px;
+    left: 760px;
+    z-index: 1;
+}
